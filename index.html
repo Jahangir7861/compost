@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Compost Tip</title>
+</head>
+<body>
+  <h1>Ready to learn a random compost tip?</h1>
+  <script>
+    // List of your compost tip URLs
+    const compostTips = [
+      "https://topcomposttips.xyz/is-mold-in-your-compost-pile-cause-for-concern-find-out-here",
+      "https://topcomposttips.xyz/can-you-compost-cheese-and-dairy-a-comprehensive-guide-to-composting-cheese",
+      "https://topcomposttips.xyz/efficient-ways-to-store-compost-for-future-use-in-your-garden",
+      "https://topcomposttips.xyz/composting-corn-cobs-everything-you-need-to-know",
+      "https://topcomposttips.xyz/the-ultimate-guide-to-mushroom-growing-for-houseplants-exploring-myco-habitat-and-fungal-magic",
+      "https://topcomposttips.xyz/transforming-trash-into-garden-treasures-the-ultimate-guide-to-composting-and-upcycling",
+      "https://topcomposttips.xyz/how-to-eliminate-the-sewage-like-odor-from-your-potting-soil-for-healthy-plants",
+      "https://topcomposttips.xyz/whats-the-weight-of-a-cubic-yard-of-compost-topsoil-find-out-here",
+      "https://topcomposttips.xyz/composting-eggs-a-guide-to-including-eggs-in-your-compost-bin",
+      "https://topcomposttips.xyz/exploring-the-pros-and-cons-of-composting-is-managing-food-waste-worth-the-effort",
+      "https://topcomposttips.xyz/unearthing-the-garden-magic-discovering-the-benefits-of-worm-castings-from-magic-worm-farm",
+      "https://topcomposttips.xyz/ultimate-guide-to-composting-creating-nutrient-rich-soil-at-home"
+    ];
+
+    // Generate a random number between 0 and the length of the array (inclusive)
+    const randomIndex = Math.floor(Math.random() * compostTips.length);
+
+    // Get the randomly selected URL
+    const randomURL = compostTips[randomIndex];
+
+    // Redirect the user to the random URL using a meta refresh tag
+    document.write(`<meta http-equiv="refresh" content="0; URL=${randomURL}">`);
+  </script>
+</body>
+</html>
